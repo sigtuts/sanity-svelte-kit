@@ -23,7 +23,7 @@
 <svelte:head>
   <title>Blog</title>
 </svelte:head>
-
+<h1>Welcome to this Blog</h1>
 <h1>Recent posts</h1>
 
 <PostsGrid {posts} />
