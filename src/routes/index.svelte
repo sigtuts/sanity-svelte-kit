@@ -15,6 +15,13 @@
 <script>
   import AuthorCard from '$lib/AuthorCard.svelte'
   import PostsGrid from '$lib/PostsGrid.svelte'
+  import {onMount} from 'svelte'
+
+  let get = false
+
+  onMount(async () => {
+    get = true
+  })
 
   export let posts
   export let authors
@@ -26,10 +33,12 @@
 
 <h1>Recent posts</h1>
 
-<PostsGrid {posts} />
+{#if get}
+  <PostsGrid {posts} />
 
-<h2 style="margin-top: 4rem">Author{authors.length > 1 ? 's' : ''}</h2>
+  <h2 style="margin-top: 4rem">Author{authors.length > 1 ? 's' : ''}</h2>
 
-{#each authors as author}
-  <AuthorCard {author} />
-{/each}
+  {#each authors as author}
+    <AuthorCard {author} />
+  {/each}
+{/if}
