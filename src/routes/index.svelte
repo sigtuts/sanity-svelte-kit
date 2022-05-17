@@ -13,7 +13,6 @@
 </script>
 
 <script>
-  import AuthorCard from '$lib/AuthorCard.svelte'
   import PostsGrid from '$lib/PostsGrid.svelte'
   import {onMount} from 'svelte'
 
@@ -35,6 +34,4 @@
 
 {#if get}
   <PostsGrid {posts} />
-
-  <h2 style="margin-top: 4rem">Author{authors.length > 1 ? 's' : ''}</h2>
 {/if}
