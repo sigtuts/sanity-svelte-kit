@@ -28,7 +28,7 @@
 </script>
 
 <svelte:head>
-  <title>Blog</title>
+  <title>Lovely Joy's Blog</title>
 </svelte:head>
 
 <h1>Recent posts</h1>
@@ -37,8 +37,4 @@
   <PostsGrid {posts} />
 
   <h2 style="margin-top: 4rem">Author{authors.length > 1 ? 's' : ''}</h2>
-
-  {#each authors as author}
-    <AuthorCard {author} />
-  {/each}
 {/if}
