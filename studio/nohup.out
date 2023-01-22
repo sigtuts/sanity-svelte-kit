@@ -1,0 +1,19 @@
+✔ Checking configuration files...
+node:events:504
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 127.0.0.1:3333
+    at Server.setupListenHandle [as _listen2] (node:net:1330:16)
+    at listenInCluster (node:net:1378:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1516:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:73:8)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1357:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 3333
+}

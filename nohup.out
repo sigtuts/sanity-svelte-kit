@@ -1,0 +1,30 @@
+
+> sveltekit-sanity-template@0.0.1 dev
+> svelte-kit dev "--open"
+
+
+  SvelteKit v1.0.0-next.202
+
+  local:   http://localhost:3000
+  network: not exposed
+
+  Use --host to expose server to other devices on this network
+
+
+2:01:03 PM [vite-plugin-svelte] /Users/sigve/programming/sanity-svelte-kit/src/routes/index.svelte:26:13 Routes has unused export property 'authors'. If it is for external reference only, please consider using `export const authors`
+2:01:04 PM [vite-plugin-svelte] /Users/sigve/programming/sanity-svelte-kit/src/routes/index.svelte:26:13 Routes has unused export property 'authors'. If it is for external reference only, please consider using `export const authors`
+
+> sveltekit-sanity-template@0.0.1 dev
+> svelte-kit dev "--open"
+
+
+  SvelteKit v1.0.0-next.202
+
+  local:   http://localhost:3000
+  network: not exposed
+
+  Use --host to expose server to other devices on this network
+
+
+2:01:47 PM [vite-plugin-svelte] /Users/sigve/programming/sanity-svelte-kit/src/routes/index.svelte:26:13 Routes has unused export property 'authors'. If it is for external reference only, please consider using `export const authors`
+2:01:48 PM [vite-plugin-svelte] /Users/sigve/programming/sanity-svelte-kit/src/routes/index.svelte:26:13 Routes has unused export property 'authors'. If it is for external reference only, please consider using `export const authors`
