@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
+import gallery from './documents/gallery'
 
 // Object types
 import authorReference from './objects/authorReference'
@@ -24,6 +25,7 @@ export default createSchema({
     post,
     category,
     author,
+    gallery,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
