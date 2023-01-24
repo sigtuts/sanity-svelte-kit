@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-  <title>Lovely Joy's Blog</title>
+  <title>Lovely Joy's Kitchen</title>
 </svelte:head>
 
 <h1>Recent posts</h1>

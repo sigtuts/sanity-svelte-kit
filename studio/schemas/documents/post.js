@@ -62,7 +62,7 @@ export default {
       name: 'price',
       type: 'bodyPortableText',
       type: 'array',
-      title: 'Post body',
+      title: 'Price',
       of: [
         {
           type: 'block',
@@ -89,9 +89,6 @@ export default {
           type: 'image',
           options: {hotspot: true}
         },
-        {
-          type: 'code'
-        }
       ]
     },{
       name: 'body',
@@ -157,6 +154,7 @@ export default {
       ]
     }
   ],
+  
   preview: {
     select: {
       title: 'title',

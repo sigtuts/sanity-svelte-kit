@@ -9,6 +9,7 @@ import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
 import gallery from './documents/gallery'
+import categoryCopy from './documents/category copy'
 
 // Object types
 import authorReference from './objects/authorReference'
@@ -26,6 +27,7 @@ export default createSchema({
     category,
     author,
     gallery,
+    categoryCopy,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
