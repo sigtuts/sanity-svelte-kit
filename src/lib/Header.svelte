@@ -10,8 +10,8 @@
 </script>
 
 <header>
-  <span>{blogTitle}</span>
-  <nav>
+  <span style="grid-column:2;text-align: center;">{blogTitle}</span>
+  <nav style="grid-column:3; text-align: center;">
     <ul>
       <li><a data-selected={path === '/'} href="/">home</a></li>
     </ul>
@@ -34,11 +34,14 @@
   }
 
   header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1em;
+    display: grid;
+  justify-content: space-between;
+  align-content: center;
+
+  gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  
   }
   @media screen and (min-width: 400px) {
     header {

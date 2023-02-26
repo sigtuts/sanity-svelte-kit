@@ -48,11 +48,11 @@
   <AuthorCard {author} />
 {/each}
 
-<hr />
 
 {#if post.image}
-  <SanityImage image={post.image} />
+<SanityImage image={post.image} />
 {/if}
+<h2>{post.price}</h2>
 
 <PortableText
   blocks={post.body}
