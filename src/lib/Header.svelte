@@ -9,7 +9,7 @@
   $: ({path} = $page)
 </script>
 
-<header>
+<header style="background-color:#202A30">
   <span style="grid-column:2;text-align: center;">{blogTitle}</span>
   <nav style="grid-column:3; text-align: center;">
     <ul>
