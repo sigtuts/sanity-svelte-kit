@@ -30,7 +30,7 @@
   <title>Lovely Joy's Kitchen</title>
 </svelte:head>
 
-<h1 style="color:#888">Recent posts</h1>
+<h1 >Recent posts</h1>
 
 {#if get}
   <PostsGrid {posts} />
