@@ -8,8 +8,8 @@
   footer {
     background-color: #202A30;
     text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    /* margin-top: 10vh;
+    margin-bottom: 10vh; */
     display: grid;
   justify-content: space-around;
   align-content: center;

@@ -14,12 +14,12 @@
   grid-template-columns: 1fr 4fr 1fr;
   width: 100%;
   ">
-<span style="background-color: #171717;text-align: center;">.</span>
+<span style="border-style: solid;border-width: 1px;border-radius: 10px; text-align: center;">.</span>
 <main style="padding: 1em">
   <slot />
 </main>
 
-<span style="background-color: #171717; text-align: center;">.</span>
+<span style="border-style: solid;border-width: 1px;border-radius: 10px; text-align: center;">.</span>
 </span>
 <Footer></Footer>
 <style>

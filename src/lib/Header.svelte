@@ -9,8 +9,8 @@
   $: ({path} = $page)
 </script>
 
-<header style="background-color:#202A30;">
-  <span style="grid-column:2;text-align: center;">{blogTitle}</span>
+<header style="background-color:#202A30;height:5rem;">
+  <h2 style="grid-column:2;text-align: center;">{blogTitle}</h2>
   <nav style="grid-column:3; text-align: center;">
     <ul>
       <li><a data-selected={path === '/'} href="/">home</a></li>
