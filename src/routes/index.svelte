@@ -23,7 +23,7 @@
   })
 
   export let posts
-  export let authors
+  // export let authors
 </script>
 
 <svelte:head>

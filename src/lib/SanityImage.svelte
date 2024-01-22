@@ -20,11 +20,14 @@
 </script>
 
 {#if image}
+<div style="width: 100vw;">
+
   <img
-    loading="lazy"
-    src={urlFor(image).width(maxWidth).fit('fillmax')}
-    alt={alt || image.alt || ''}
-    style="aspect-ratio: {aspectRatio}; opacity: {loaded ? 1 : 0}; transition: .2s opacity;"
-    on:load={() => (loaded = true)}
+  loading="lazy"
+  src={urlFor(image).width(maxWidth).fit('fillmax')}
+  alt={alt || image.alt || ''}
+  style="aspect-ratio: {aspectRatio}; opacity: {loaded ? 1 : 0}; transition: .2s opacity;"
+  on:load={() => (loaded = true)}
   />
+</div>
 {/if}
