@@ -27,10 +27,12 @@
 
   h2 {
     margin: 1rem 0 0;
+    color: #888;
   }
 
   h2 a {
     text-decoration: none;
+    color: #888;
   }
 
   .image {

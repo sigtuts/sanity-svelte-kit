@@ -9,9 +9,9 @@
   $: ({path} = $page)
 </script>
 
-<header style="background-color:#202A30;height:5rem;">
-  <h2 style="grid-column:2;text-align: center;">{blogTitle}</h2>
-  <nav style="grid-column:3; text-align: center;">
+<header >
+  <h2 >{blogTitle}</h2>
+  <nav >
     <ul>
       <li><a data-selected={path === '/'} href="/">home</a></li>
     </ul>
@@ -32,16 +32,24 @@
     text-decoration: none;
     display: block;
   }
+  nav{
+    grid-column:3; text-align: center;
+  }
 
   header {
     display: grid;
   justify-content: space-between;
   align-content: center;
-
+  color: #888;
   gap: 4px;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100vw;
+  background-color:#202A30;
+  height:5rem;
   
+  }
+  h2{
+    grid-column:2;text-align: center;
   }
   @media screen and (min-width: 400px) {
     header {

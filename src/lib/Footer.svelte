@@ -13,7 +13,7 @@
     display: grid;
   justify-content: space-around;
   align-content: center;
-
+color: #888;
   gap: 4px;
   grid-auto-flow: column;
   grid-auto-flow: row;
