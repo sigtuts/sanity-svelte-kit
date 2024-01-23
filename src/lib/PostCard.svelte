@@ -39,6 +39,7 @@
     padding-bottom: 62.5%;
     position: relative;
     overflow: hidden;
+    box-shadow: 2px 2px 15px #111, -2px -2px 15px #111;
   }
 
   .image :global(img) {

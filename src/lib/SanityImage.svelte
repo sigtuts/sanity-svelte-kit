@@ -20,13 +20,13 @@
 </script>
 
 {#if image}
-<div style="width: 100vw;">
+<div >
 
   <img
   loading="lazy"
-  src={urlFor(image).width(maxWidth).fit('fillmax')}
+  src={urlFor(image).width(maxWidth)}
   alt={alt || image.alt || ''}
-  style="aspect-ratio: {aspectRatio}; opacity: {loaded ? 1 : 0}; transition: .2s opacity;"
+  style="aspect-ratio: {aspectRatio}; opacity: {loaded ? 1 : 0}; transition: .2s opacity; box-shadow:5px 5px 5px black, -5px -5px 5px black"
   on:load={() => (loaded = true)}
   />
 </div>
