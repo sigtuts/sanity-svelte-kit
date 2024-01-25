@@ -1,6 +1,8 @@
 <script>
   import {urlFor} from './sanityClient'
 
+  let pass
+  let img
   export let image
   // export let maxWidth = 1200
   export let alt = undefined
@@ -17,12 +19,20 @@
 
   // Once loaded, the image will transition to full opacity
   let loaded = false
+  function open() {
+    img.style.width = '100vw'
+  }
 </script>
 
 {#if image}
   <div>
     <!-- src={urlFor(image).width(maxWidth)} -->
     <img
+      on:click={open}
+      bind:this={img}
+      on:keyup={() => {
+        pass
+      }}
       loading="lazy"
       src={urlFor(image)}
       alt={alt || image.alt || ''}

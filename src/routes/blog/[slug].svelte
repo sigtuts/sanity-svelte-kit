@@ -29,6 +29,20 @@
   import SanityImage from '$lib/SanityImage.svelte'
 
   export let post
+
+  let gallery
+  let img
+
+  try {
+    if (post.gallery.images.length != 0) {
+      gallery = true
+    }
+  } catch (error) {
+    gallery = false
+  }
+  function open() {
+    console.log('open')
+  }
 </script>
 
 <svelte:head>
@@ -48,11 +62,12 @@
   <AuthorCard {author} />
 {/each}
 
-
 {#if post.image}
-<SanityImage image={post.image} />
+  <SanityImage image={post.image} />
 {/if}
-<h2>{post.price}</h2>
+{#if post.price}
+  <h2>{post.price}</h2>
+{/if}
 
 <PortableText
   blocks={post.body}
@@ -67,3 +82,11 @@
     }
   }}
 />
+
+{#if gallery}
+  {#each post.gallery.images as imi}
+    <SanityImage image={imi} />
+  {/each}
+{:else}
+  <p>Nothing to view</p>
+{/if}
