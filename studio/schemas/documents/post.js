@@ -62,7 +62,7 @@ export default {
       name: 'price',
       type: 'string',
       title: 'Price',
-      initialValue: ' '
+      initialValue: 'Hei'
     },
     {
       name: 'body',
