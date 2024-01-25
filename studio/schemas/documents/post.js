@@ -33,7 +33,10 @@ export default {
     {
       name: 'image',
       type: 'image',
-      title: 'Main image'
+      title: 'Main image',
+      options: {
+        hotspot: true
+      }
     },
     {
       name: 'authors',
@@ -62,7 +65,7 @@ export default {
       name: 'price',
       type: 'string',
       title: 'Price',
-      initialValue: 'Hei'
+      initialValue: ' '
     },
     {
       name: 'body',
