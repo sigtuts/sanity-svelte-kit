@@ -20,15 +20,16 @@
 </script>
 
 {#if image}
-<div >
-
-  <!-- src={urlFor(image).width(maxWidth)} -->
-  <img
-  loading="lazy"
-  src={urlFor(image)}
-  alt={alt || image.alt || ''}
-  style="aspect-ratio: {aspectRatio}; opacity: {loaded ? 1 : 0}; transition: .2s opacity;width:100%; box-shadow:5px 5px 5px black, -5px -5px 5px black"
-  on:load={() => (loaded = true)}
-  />
-</div>
+  <div>
+    <!-- src={urlFor(image).width(maxWidth)} -->
+    <img
+      loading="lazy"
+      src={urlFor(image)}
+      alt={alt || image.alt || ''}
+      style="aspect-ratio: {aspectRatio}; opacity: {loaded
+        ? 1
+        : 0}; transition: .2s opacity;width:100%; box-shadow:5px 5px 5px black, -5px -5px 5px black"
+      on:load={() => (loaded = true)}
+    />
+  </div>
 {/if}

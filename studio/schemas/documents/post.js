@@ -57,12 +57,14 @@ export default {
           }
         }
       ]
-    },   {
+    },
+    {
       name: 'price',
       type: 'string',
       title: 'Price',
+      initialValue: ' '
     },
-     {
+    {
       name: 'body',
       type: 'bodyPortableText',
       type: 'array',
@@ -126,7 +128,7 @@ export default {
       ]
     }
   ],
-  
+
   preview: {
     select: {
       title: 'title',

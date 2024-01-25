@@ -9,12 +9,11 @@
     <a rel="prefetch" href="/blog/{post.slug.current}">{post.title}</a>
   </h2>
   {#if post.image}
-  <a rel="prefetch" href="/blog/{post.slug.current}">
-  
-    <div class="image">
-      <SanityImage image={post.image} maxWidth={300} />
-    </div>
-  </a>
+    <a rel="prefetch" href="/blog/{post.slug.current}">
+      <div class="image">
+        <SanityImage image={post.image} maxWidth={300} />
+      </div>
+    </a>
   {/if}
 </article>
 
