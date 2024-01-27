@@ -64,6 +64,11 @@ export default {
           }
         }
       ]
+    },
+    {
+      name: 'SVGimage',
+      type: 'image',
+      title: 'Header image'
     }
   ],
   preview: {

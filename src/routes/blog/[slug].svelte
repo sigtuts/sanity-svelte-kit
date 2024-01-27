@@ -30,6 +30,7 @@
   import {urlFor} from '$lib/sanityClient.js'
 
   export let post
+  console.log(post)
 
   let gallery
   let img
@@ -47,10 +48,6 @@
     dialog.showModal()
     imgDialog.src = urlFor(event.detail)
     imgDialog.style.maxWidth = '95vw'
-    // console.log(event.detail)
-    // dialog.image = event.detail
-    // imgDialog.image = urlFor(event.detail)
-    // console.log(event.detail.currentSrc)
   }
 
   function close(event) {
