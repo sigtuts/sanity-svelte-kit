@@ -1,9 +1,10 @@
 <script>
   import Header from '$lib/Header.svelte'
   import Footer from '$lib/Footer.svelte'
+  import image from '$lib/wave.svg'
 </script>
 
-<Header blogTitle={"Lovely Lovely Joy's Kitchen"} />
+<Header blogTitle={"Lovely Lovely Joy's Kitchen"} svg={image} />
 
 <span class="layout-container">
   <span class="sides"

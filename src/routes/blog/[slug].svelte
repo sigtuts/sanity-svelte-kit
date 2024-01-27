@@ -30,7 +30,6 @@
   import {urlFor} from '$lib/sanityClient.js'
 
   export let post
-  console.log(post)
 
   let gallery
   let img
