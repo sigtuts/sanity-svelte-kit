@@ -14,6 +14,8 @@
   <nav>
     <ul>
       <li><a data-selected={path === '/'} href="/">home</a></li>
+      <li><a href="/authors/the-greatest">Greatest</a></li>
+      <li><a href="/authors/lovely-joy">Lovely Joy</a></li>
     </ul>
   </nav>
 </header>
@@ -31,6 +33,10 @@
   a {
     text-decoration: none;
     display: block;
+    color: #5555;
+  }
+  a:hover {
+    color: #5559;
   }
   nav {
     grid-column: 3;

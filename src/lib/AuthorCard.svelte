@@ -19,6 +19,10 @@
     align-items: center;
     gap: 0.5em;
     vertical-align: middle;
+    color: #5555;
+  }
+  a:hover {
+    color: #5559;
   }
   span :global(img) {
     border-radius: 50%;
