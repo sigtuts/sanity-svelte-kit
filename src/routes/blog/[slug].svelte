@@ -27,11 +27,14 @@
   import AuthorBlock from '$lib/AuthorBlock.svelte'
   import AuthorCard from '$lib/AuthorCard.svelte'
   import SanityImage from '$lib/SanityImage.svelte'
+  import {urlFor} from '$lib/sanityclient'
 
   export let post
 
   let gallery
   let img
+  let dialog
+  let imgDialog
 
   try {
     if (post.gallery.images.length != 0) {
@@ -40,8 +43,18 @@
   } catch (error) {
     gallery = false
   }
-  function open() {
-    console.log('open')
+  function open(event) {
+    dialog.showModal()
+    imgDialog.src = urlFor(event.detail)
+    imgDialog.style.maxWidth = '100vw'
+    // console.log(event.detail)
+    // dialog.image = event.detail
+    // imgDialog.image = urlFor(event.detail)
+    // console.log(event.detail.currentSrc)
+  }
+
+  function close(event) {
+    dialog.addEventListener('click', () => dialog.close())
   }
 </script>
 
@@ -63,7 +76,7 @@
 {/each}
 
 {#if post.image}
-  <SanityImage image={post.image} />
+  <SanityImage image={post.image} on:clic={open} />
 {/if}
 {#if post.price}
   <h2>{post.price}</h2>
@@ -85,8 +98,12 @@
 
 {#if gallery}
   {#each post.gallery.images as imi}
-    <SanityImage image={imi} />
+    <SanityImage image={imi} on:clic={open} />
   {/each}
 {:else}
   <p>Nothing to view</p>
 {/if}
+
+<dialog bind:this={dialog} on:click={close}>
+  <img bind:this={imgDialog} alt="" />
+</dialog>

@@ -1,8 +1,10 @@
 <script>
   import {urlFor} from './sanityClient'
+  import {createEventDispatcher} from 'svelte'
 
   let pass
   let img
+  let dispatch = createEventDispatcher()
   export let image
   // export let maxWidth = 1200
   export let alt = undefined
@@ -20,7 +22,7 @@
   // Once loaded, the image will transition to full opacity
   let loaded = false
   function open() {
-    img.style.width = '100vw'
+    dispatch('clic', image)
   }
 </script>
 
