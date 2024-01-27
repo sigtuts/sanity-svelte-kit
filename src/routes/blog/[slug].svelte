@@ -27,7 +27,7 @@
   import AuthorBlock from '$lib/AuthorBlock.svelte'
   import AuthorCard from '$lib/AuthorCard.svelte'
   import SanityImage from '$lib/SanityImage.svelte'
-  import {urlFor} from '$lib/sanityclient'
+  import {urlFor} from '$lib/sanityclient.js'
 
   export let post
 
