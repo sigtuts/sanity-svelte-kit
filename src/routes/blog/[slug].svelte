@@ -27,7 +27,7 @@
   import AuthorBlock from '$lib/AuthorBlock.svelte'
   import AuthorCard from '$lib/AuthorCard.svelte'
   import SanityImage from '$lib/SanityImage.svelte'
-  import {urlFor} from '$lib/sanityclient.js'
+  import {urlFor} from '$lib/sanityClient.js'
 
   export let post
 
@@ -46,7 +46,7 @@
   function open(event) {
     dialog.showModal()
     imgDialog.src = urlFor(event.detail)
-    imgDialog.style.maxWidth = '100vw'
+    imgDialog.style.maxWidth = '95vw'
     // console.log(event.detail)
     // dialog.image = event.detail
     // imgDialog.image = urlFor(event.detail)
@@ -76,7 +76,7 @@
 {/each}
 
 {#if post.image}
-  <SanityImage image={post.image} on:clic={open} />
+  <SanityImage image={post.image} on:clic={open} on:keyup={() => ''} />
 {/if}
 {#if post.price}
   <h2>{post.price}</h2>
@@ -104,6 +104,6 @@
   <p>Nothing to view</p>
 {/if}
 
-<dialog bind:this={dialog} on:click={close}>
+<dialog bind:this={dialog} on:click={close} on:keyup={() => ''}>
   <img bind:this={imgDialog} alt="" />
 </dialog>
