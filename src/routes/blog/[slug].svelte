@@ -107,3 +107,9 @@
 <dialog bind:this={dialog} on:click={close} on:keyup={() => ''}>
   <img bind:this={imgDialog} alt="" />
 </dialog>
+
+<style>
+  dialog {
+    background-color: #0003;
+  }
+</style>
