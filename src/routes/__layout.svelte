@@ -31,8 +31,8 @@
     can be found in the grumpiest of places.</span
   >
 </span>
-<Footer />
 
+<!-- <Footer /> -->
 <style>
   :global(a) {
     color: #1a4d9e;

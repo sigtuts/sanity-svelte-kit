@@ -1,6 +1,6 @@
 <footer>
-  <h3>Contact me for order</h3>
-  <h4>E-Mail: fun@home.net</h4>
+  <h3 class="footerEl">Contact me for order</h3>
+  <h4 class="footerEl">E-Mail: fun@home.net</h4>
 </footer>
 
 <style>
@@ -14,7 +14,12 @@
     align-content: center;
     color: #888;
     gap: 4px;
-    grid-auto-flow: column;
-    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+  }
+  .footerEl {
+    grid-column: 2;
   }
 </style>
