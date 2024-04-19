@@ -27,10 +27,10 @@
 </script>
 
 <svelte:head>
-  <title>Lovely Joy's Kitchen</title>
+  <title>Grumpy Joy Cusine</title>
 </svelte:head>
 
-<h1 >Recent posts</h1>
+<h1>Recent posts</h1>
 
 {#if get}
   <PostsGrid {posts} />
