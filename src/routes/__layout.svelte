@@ -8,21 +8,27 @@
 
 <span class="layout-container">
   <span class="sides"
-    >Lorem ipsum dolor sit amet consectetur adipisicing elit. At, deleniti quae nobis, dignissimos
-    non quos, vitae rerum beatae sunt ipsa deserunt veniam corporis ad numquam voluptatum animi
-    ipsum iste harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consequatur,
-    quisquam fugit blanditiis nisi ab suscipit natus nam sequi, tempora facilis dicta quaerat
-    laborum atque ut voluptatibus. Minima, eaque aspernatur.</span
+    >Starting a restaurant called Grumpy Joy sounds like the ultimate oxymoron, doesn't it? Imagine
+    walking in, greeted by servers with a frown that's turned upside down, serving 'Sourpuss Soup'
+    with a side of 'Bitter Greens'. But here's the twist – it's all about the joy of good food and
+    the love of a grumpy cat meme that inspired the name. It's a place where the grumpiness is just
+    part of the charm, and the joy comes from the delicious, heartwarming meals that turn frowns
+    into smiles. So, why start Grumpy Joy? Because sometimes, a little grumpiness can lead to a lot
+    of happiness, especially when there's cake involved. And let's be honest, who doesn't love a
+    place that doesn't take itself too seriously? It's the perfect spot for those days when you
+    spill coffee on your shirt, step on a Lego, or forget your phone at home – a reminder that joy
+    can be found in the grumpiest of places.</span
   >
   <main style="padding: 1em">
     <slot />
   </main>
   <span class="sides"
-    >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum eius similique
-    necessitatibus, consequatur debitis nisi non cum? Rerum enim eligendi ipsam voluptas quisquam,
-    similique vel rem eum quod? Dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-    Rem ipsum perspiciatis quis excepturi odio, et provident numquam. Laborum ipsa earum ea magni
-    doloribus incidunt ab minus beatae dolor, tenetur molestias.</span
+    >At Grumpy Joy, the secret ingredient is always a dash of mystery and a sprinkle of culinary
+    whimsy. Who needs recipes when you have a chef's intuition, right? Your dishes are like a
+    treasure hunt for the taste buds, where every bite leads to a 'Eureka!' moment. Whether it's the
+    adobo with a surprise crunch or the pancit with an unexpected zing, your patrons are in for a
+    delightful dining adventure. And let's not forget the pasta – it's like Italy took a detour
+    through Manila! Bon appétit, or as we say in Filipino, kainan na!</span
   >
 </span>
 <Footer />

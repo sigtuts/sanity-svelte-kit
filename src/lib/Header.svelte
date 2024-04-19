@@ -10,7 +10,8 @@
 </script>
 
 <header style="background-image: url({svg});">
-  <h2>{blogTitle}</h2>
+  <!-- <h2>{blogTitle}</h2> -->
+  <img src="GrumpyJoy.png" alt="" />
   <nav>
     <ul>
       <li><a data-selected={path === '/'} href="/">home</a></li>
@@ -45,6 +46,7 @@
 
   header {
     display: grid;
+    place-items: center;
     justify-content: space-between;
     align-content: center;
     color: #888;
@@ -54,11 +56,15 @@
     background-color: #202a30;
     height: 5rem;
   }
-  h2 {
+  img {
+    width: 50%;
+    grid-column: 2;
+  }
+  /* h2 {
     grid-column: 2;
     text-align: center;
     text-shadow: #fc0 1px 0 10px;
-  }
+  } */
   @media screen and (min-width: 400px) {
     header {
       flex-direction: row-reverse;
