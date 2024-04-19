@@ -57,7 +57,7 @@
     height: 5rem;
   }
   img {
-    width: 50%;
+    width: 100%;
     grid-column: 2;
   }
   /* h2 {
@@ -65,10 +65,14 @@
     text-align: center;
     text-shadow: #fc0 1px 0 10px;
   } */
-  @media screen and (min-width: 400px) {
-    header {
+  @media screen and (min-width: 768px) {
+    /* header {
       flex-direction: row-reverse;
       align-items: center;
+    } */
+    img {
+      width: 50%;
+      grid-column: 2;
     }
   }
 </style>

@@ -8,6 +8,17 @@
 
 <span class="layout-container">
   <span class="sides"
+    >At Grumpy Joy, the secret ingredient is always a dash of mystery and a sprinkle of culinary
+    whimsy. Who needs recipes when you have a chef's intuition, right? Your dishes are like a
+    treasure hunt for the taste buds, where every bite leads to a 'Eureka!' moment. Whether it's the
+    adobo with a surprise crunch or the pancit with an unexpected zing, your patrons are in for a
+    delightful dining adventure. And let's not forget the pasta – it's like Italy took a detour
+    through Manila! Bon appétit, or as we say in Filipino, kainan na!
+  </span>
+  <main style="padding: 1em">
+    <slot />
+  </main>
+  <span class="sides"
     >Starting a restaurant called Grumpy Joy sounds like the ultimate oxymoron, doesn't it? Imagine
     walking in, greeted by servers with a frown that's turned upside down, serving 'Sourpuss Soup'
     with a side of 'Bitter Greens'. But here's the twist – it's all about the joy of good food and
@@ -18,17 +29,6 @@
     place that doesn't take itself too seriously? It's the perfect spot for those days when you
     spill coffee on your shirt, step on a Lego, or forget your phone at home – a reminder that joy
     can be found in the grumpiest of places.</span
-  >
-  <main style="padding: 1em">
-    <slot />
-  </main>
-  <span class="sides"
-    >At Grumpy Joy, the secret ingredient is always a dash of mystery and a sprinkle of culinary
-    whimsy. Who needs recipes when you have a chef's intuition, right? Your dishes are like a
-    treasure hunt for the taste buds, where every bite leads to a 'Eureka!' moment. Whether it's the
-    adobo with a surprise crunch or the pancit with an unexpected zing, your patrons are in for a
-    delightful dining adventure. And let's not forget the pasta – it's like Italy took a detour
-    through Manila! Bon appétit, or as we say in Filipino, kainan na!</span
   >
 </span>
 <Footer />
@@ -54,7 +54,19 @@
     align-content: center;
 
     gap: 4px;
-    grid-template-columns: 1fr 4fr 1fr;
+    /* grid-template-columns: 1fr 4fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 100%;
+  }
+  @media (min-width: 768px) {
+    .layout-container {
+      display: grid;
+      justify-content: space-between;
+      align-content: center;
+
+      gap: 4px;
+      grid-template-columns: 1fr 4fr 1fr;
+      width: 100%;
+    }
   }
 </style>
