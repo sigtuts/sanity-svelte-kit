@@ -9,7 +9,8 @@
   $: ({path} = $page)
 </script>
 
-<header style="background-image: url({svg});">
+<header>
+  <!-- <header style="background-image: url({svg});"> -->
   <!-- <h2>{blogTitle}</h2> -->
   <img src="GrumpyJoy.png" alt="" />
   <nav>
