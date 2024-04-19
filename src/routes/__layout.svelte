@@ -4,7 +4,7 @@
   import image from '$lib/wave.svg'
 </script>
 
-<Header blogTitle={"Lovely Lovely Joy's Kitchen"} svg={image} />
+<Header blogTitle={'Grumpy Joy Cusine'} svg={image} />
 
 <span class="layout-container">
   <span class="sides"
