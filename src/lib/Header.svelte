@@ -15,8 +15,7 @@
   <img src="GrumpyJoy.png" alt="" />
   <nav>
     <ul>
-      <li><a data-selected={path === '/'} href="/">home</a></li>
-      <li><a href="/authors/the-greatest">Greatest</a></li>
+      <li><a data-selected={path === '/'} href="/">Home</a></li>
       <li><a href="/authors/lovely-joy">Lovely Joy</a></li>
     </ul>
   </nav>
